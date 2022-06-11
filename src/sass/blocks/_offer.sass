@@ -1,0 +1,156 @@
+.offer
+	margin-bottom: 100px
+	&__tabs
+		margin-top: 70px
+		List-style: none
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-bottom: 0
+		padding-left: 0
+	&__tab
+		width: 222px
+		height: 52px
+		border: 2px solid #D0D0D0
+		font-weight: 500
+		font-size: 18px
+		text-transform: uppercase
+		color: #6B6B6B
+		text-align: center
+		line-height: 48px
+		transform: skewX(-25deg)
+		margin: 0 5px
+		cursor: pointer
+		transition: 0.5s all
+		&:hover
+			box-shadow: 3px 3px 20px #C70101
+			border: none
+		div
+			transform: skewX(25deg)
+		&_active
+			color: #FFFFFF
+			background: #C70101
+			border: none
+	&__content
+		margin-top: 60px
+		display: none
+		justify-content: space-between
+		flex-wrap: wrap
+		&_active
+			display: flex
+		&_last
+			justify-content: flex-start
+		
+
+	&-item
+		width: 303px
+		min-height: 442px
+		border: 2px solid #E8E8E8
+		padding: 20px 20px 27px 20px
+		overflow: hidden
+		margin-bottom: 20px
+		&_alone
+			margin-right: 9px
+		&__img
+			display: block
+			margin: 0 auto
+			max-width: 100%
+			height: 200px
+		&__subtitle
+			margin-top: 20px
+			font-weight: 700
+			font-size: 16px
+			text-align: center
+			color: #0D0D0D
+		&__descr
+			margin-top: 16px
+			font-weight: 300
+			font-size: 14px
+			line-height: 22px
+			text-align: center
+			color: #0D0D0D
+		&__link
+			display: block
+			margin-top: 10px
+			font-weight: 500
+			font-size: 14px
+			text-decoration-line: underline
+			color: #C70101
+			text-align: center
+			&:hover
+				color: #C70101
+		hr
+			margin: 17px 0
+			background: #bebebe
+		&__footer
+			display: flex
+			justify-content: space-between
+			align-items: center
+		&__price-old
+			font-weight: 300
+			font-size: 14px
+			text-decoration-line: line-through
+			color: #555555
+		&__price-new
+			margin-top: 2px
+			font-weight: 700
+			font-size: 20px
+			color: #050505
+		&__wrapper
+			display: flex
+			width: calc( 200% + 40px )
+		&__content
+			width: 50%
+			margin-right: 0
+			transform: translateX(-100%)
+			transition: 0.5s all	
+			&_active
+				transform: translateX(0%)
+				margin-right: 20px
+		&__list
+			position: relative
+			width: 50%
+			transform: translateX(0%)
+			margin-left: 20px
+			padding-right: 20px
+			transition: 0.5s all
+			padding-left: 19px
+			margin-bottom: 0
+			list-style-type: none
+			&_active
+				margin-left: 0
+				transform: translateX(-100%)
+			li
+				position: relative
+				font-weight: 300
+				font-size: 14px
+				line-height: 21px
+				color: #555555
+				margin-bottom: 10px
+				&::before
+					content: ''
+					position: absolute
+					width: 5px
+					height: 5px
+					background-color: #C70101
+					left: -14px
+					top: 7px
+			a
+				position: absolute
+				bottom: 0
+				left: 50%
+				transform: translateX(calc( -50% - 19px ))
+				display: block
+				font-weight: 500
+				font-size: 14px
+				text-align: center
+				text-decoration-line: underline
+				color: #C70101
+				&:hover
+					color: #C70101
+					
+
+
+
+
+
